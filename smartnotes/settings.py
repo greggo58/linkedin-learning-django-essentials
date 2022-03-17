@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-dhgp7)vik36j&)6by58)7wo!ucqqnyot4mleuhl!t72j^6cny!
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'localhost:8000',
+    'localhost',
     ]
 
 
@@ -126,3 +126,9 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CSRF_COOKIE_SECURE = True
+
+CSRF_COOKIE_DOMAIN = ['http://localhost', 'https://8000-greggo58-linkedinlearnin-4m8ivjcdsdp.ws-eu38.gitpod.io']
+
+CSRF_TRUSTED_ORIGINS=['http://localhost', 'https://8000-greggo58-linkedinlearnin-4m8ivjcdsdp.ws-eu38.gitpod.io']
